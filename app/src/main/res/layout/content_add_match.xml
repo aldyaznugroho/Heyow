@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_post_match"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.skripsigg.heyow.ui.addmatch.AddMatchActivity"
+    tools:showIn="@layout/activity_add_match">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/match_image_upload_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/match_upload_preview_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/color_grey_400"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:id="@+id/image_upload_placeholder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_camera_24dp"
+                    android:contentDescription="@null" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/match_add_image_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/add_image"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/match_title"
+                    android:textColorHint="@color/color_grey_500"
+                    android:imeOptions="actionNext"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/create_match_category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/edit_text_background"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_venue_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/venue_name"
+                    android:textColorHint="@color/color_grey_500"
+                    android:imeOptions="actionNext"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_clickable_1"
+                android:layout_marginTop="15dp">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_venue_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="textMultiLine"
+                    android:digits="0123456789"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/venue_address"
+                    android:textColorHint="@color/color_grey_500"
+                    android:imeOptions="actionNext"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_clickable_1"
+                android:layout_weight="1">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_date_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="date"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/date"
+                    android:textColorHint="@color/color_grey_500"
+                    android:drawableRight="@drawable/ic_calendar_24dp"
+                    android:drawableEnd="@drawable/ic_calendar_24dp"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_clickable_1"
+                android:layout_weight="1">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_time_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="time"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/starting_time"
+                    android:textColorHint="@color/color_grey_500"
+                    android:drawableRight="@drawable/ic_clock_24dp"
+                    android:drawableEnd="@drawable/ic_clock_24dp"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_grey_300"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_max_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/max_number_of_people"
+                    android:textColorHint="@color/color_grey_500"
+                    android:imeOptions="actionNext"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/create_match_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:hint="@string/description"
+                    android:textColorHint="@color/color_grey_500"
+                    android:imeOptions="actionDone"
+                    app:fontFamily="roboto"
+                    app:typeface="roboto_regular"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/create_match_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/button_join_match"
+                android:textColor="@color/color_white"
+                android:text="@string/create"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

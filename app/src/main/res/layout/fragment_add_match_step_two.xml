@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    tools:context="com.skripsigg.heyow.ui.addmatch.step2.AddMatchStepTwoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/create_match_venue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_grey_200"
+            android:hint="@string/venue_name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_grey_500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/create_match_venue_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_grey_200"
+            android:digits="0123456789"
+            android:hint="@string/venue_address"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_grey_500"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_grey_300" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/create_match_date_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_200"
+            android:drawableEnd="@drawable/ic_calendar_24dp"
+            android:drawableRight="@drawable/ic_calendar_24dp"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:padding="15dp"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_grey_500"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <EditText
+            android:id="@+id/create_match_time_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_grey_200"
+            android:drawableEnd="@drawable/ic_clock_24dp"
+            android:drawableRight="@drawable/ic_clock_24dp"
+            android:hint="@string/starting_time"
+            android:inputType="time"
+            android:padding="15dp"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_grey_500"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_grey_300" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/create_match_max_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_200"
+            android:hint="@string/max_number_of_people"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/color_grey_500"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

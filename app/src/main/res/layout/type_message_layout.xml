@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_grey_300"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/message_type_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@null"
+            android:textSize="16sp"
+            android:textColor="@color/color_black"
+            android:hint="@string/write_a_message_dot_dot"
+            android:textColorHint="@color/color_grey_500"
+            android:inputType="textMultiLine"/>
+
+        <ImageView
+            android:id="@+id/message_send_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:padding="13dp"
+            android:background="@drawable/background_clickable_1"
+            android:clickable="true"
+            android:src="@drawable/ic_send_24dp"
+            android:contentDescription="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="actionMenuTextColor">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- HOME CUSTOM TOOLBAR -->
+
+    <style name="Toolbar.HomeCustomToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/Toolbar.HomeCustomToolbarTheme.TitleText</item>
+        <item name="subtitleTextAppearance">@style/Toolbar.HomeCustomToolbarTheme.SubtitleText
+        </item>
+    </style>
+
+    <style name="Toolbar.HomeCustomToolbarTheme.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Toolbar.HomeCustomToolbarTheme.SubtitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- END -->
+
+    <!-- CUSTOM TAB LAYOUT -->
+    <style name="Custom.Widget.TabLayout.Basic" parent="Base.Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/Custom.Widget.TabLayout.TabText.Normal</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout.TabText.Basic" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout.Normal" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/Custom.Widget.TabLayout.TabText.Normal</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout.TabText.Normal" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/tab_text_overlay</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout.Bold" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/Custom.Widget.TabLayout.TabText.Bold</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout.TabText.Bold" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/tab_text_overlay</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- END -->
+
+</resources>

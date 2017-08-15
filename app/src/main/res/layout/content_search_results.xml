@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skripsigg.heyow.views.widgets.MainStateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.skripsigg.heyow.ui.searchresults.SearchResultsActivity"
+    tools:showIn="@layout/activity_search_results">
+
+    <LinearLayout
+        android:id="@+id/search_results_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_results_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+</com.skripsigg.heyow.views.widgets.MainStateLayout>

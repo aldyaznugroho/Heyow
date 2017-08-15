@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/search_venue_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/color_black"
+        android:hint="@string/venue"
+        android:textColorHint="@color/color_grey_500"
+        android:drawableLeft="@drawable/ic_store_24dp"
+        android:drawableStart="@drawable/ic_store_24dp"
+        android:drawablePadding="10dp"
+        android:imeOptions="actionSearch"
+        app:fontFamily="roboto"
+        app:typeface="roboto_regular"/>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/search_location_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/edit_text_background"
+        android:popupBackground="@color/color_white"
+        android:dropDownSelector="@color/color_grey_300"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/color_black"
+        android:hint="@string/location"
+        android:textColorHint="@color/color_grey_500"
+        android:drawableLeft="@drawable/ic_crosshairs_gps_24dp"
+        android:drawableStart="@drawable/ic_crosshairs_gps_24dp"
+        android:drawablePadding="10dp"
+        android:imeOptions="actionSearch"
+        app:fontFamily="roboto"
+        app:typeface="roboto_regular"/>
+
+</LinearLayout>
